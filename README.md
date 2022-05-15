@@ -3,7 +3,7 @@
 Webapp allowing you to interact with OpenAI's “text-curie-001” AI engine.
 
 ## Demo
-There is a demo website that is accessible [here](https://face-a713b.web.app/). It contains the entire project.
+There is a demo website that is accessible [here](https://funwithai-ba3c7.web.app). It contains the entire project.
 
 ## Table of Contents
 This serves as a general guide for navigating the repository!
