@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Fun with AI by Mike Dimitrov
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Webapp allowing you to interact with OpenAI's “text-curie-001” AI engine.
 
-## Available Scripts
+## Demo
+There is a demo website that is accessible [here](https://face-a713b.web.app/). It contains the entire project.
 
-In the project directory, you can run:
+## Table of Contents
+This serves as a general guide for navigating the repository!
 
-### `npm start`
+- [Getting Setup](#getting-setup)
+- [API Key](#api-key)
+- [Disclaimers](#disclaimers)
+- [Credits](#credits)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Setup
+This project assumes that you already have `Node ^14.17.6` & `npm ^6.14.15`. If you do not, please download them from [the official website](https://nodejs.org/en/download/)
+Here are a couple of steps that you can follow to quickly get started with the project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository: `git clone https://github.com/mike1572/funwithai.git`
+2. Install the project dependencies by running `npm install` inside the cloned directory
+3. Run `npm start` to start your own local development environment! Alternatively, here are some more commands available:
 
-### `npm test`
+| Commands        | Output
+|-----------------|-------------------------------------------------------------------|
+| `npm run build` | Creates a production-ready build of the project, ready for deployment |
+| `npm update`    | Updates dependencies that require newer versions to keep functioning correctly|
+| `serve -s`      | You *must* install serve (`npm install -g serve`) before running this command. This command makes the project accessible both locally and on your network, in the event that you want to test it on different devices or share it with your entourage.|
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are many more commands, which you can familiarise yourself with on the [Create a React App](https://create-react-app.dev/) website, or in [npm's](https://docs.npmjs.com/) documentation.
 
-### `npm run build`
+## API Key
+In order to run the app, you would need an API key from [OpenAI](https://openai.com/api/). Once you have it generated, please create a file `src/api.js` where you would have your API key in a variable called `api`. Export that variable. Once that is done, restart the project and everything should work.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Disclaimers
+The app demo's api key will expire on August 11, 2022. You are also required to provide your own API key, as there will be none in the project. This is for privacy & security reasons.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project or parts of its code are licensed under AGPLv3. Furthermore, npm libraries are subject to their own copyright.
