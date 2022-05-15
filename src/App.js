@@ -27,8 +27,9 @@ function App() {
   }, [])  
 
   let handleClick = (event) => {
-    setData(data.filter((element, index) => index !== event.currentTarget.value))
-    localStorage.setItem('AI_Data_Fun', JSON.stringify(data.filter((element, index) => index !== event.currentTarget.value)));
+    console.log(event.currentTarget.value)
+    setData(data.filter((element, index) => index != event.currentTarget.value))
+    localStorage.setItem('AI_Data_Fun', JSON.stringify(data.filter((element, index) => index != event.currentTarget.value)));
   }
 
   let handleChange = (event) => {
